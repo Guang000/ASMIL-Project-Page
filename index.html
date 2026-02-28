@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ASMIL | ICLR 2026</title>
+    <meta
+      name="description"
+      content="ASMIL: Attention-Stabilized Multiple Instance Learning for Whole-Slide Imaging. ICLR 2026 Project Page."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;700&family=Noto+Sans:wght@400;500;700&family=Castoro:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main>
+      <section class="hero">
+        <h1 class="title">ASMIL: Attention-Stabilized Multiple Instance Learning for Whole-Slide Imaging</h1>
+
+        <div class="authors author-links">
+          <a href="https://scholar.google.com/citations?user=Q9dpvBYAAAAJ&hl=en" target="_blank" rel="noreferrer">Linfeng Ye<sup>1</sup></a>
+          <a href="https://scholar.google.com/citations?user=jbTBFjAAAAAJ&hl=en" target="_blank" rel="noreferrer">Shayan Mohajer Hamidi<sup>2</sup></a>
+          <a href="https://scholar.google.com/citations?user=0s-HzGIAAAAJ&hl=en" target="_blank" rel="noreferrer">Zhixiang Chi<sup>1</sup></a>
+          <a href="https://www-lmd.ist.hokudai.ac.jp/member/guang-li/" target="_blank" rel="noreferrer">Guang Li<sup>3</sup></a>
+          <a href="https://web.stanford.edu/~pilanci/" target="_blank" rel="noreferrer">Mert Pilanci<sup>2</sup></a>
+          <a href="https://www-lmd.ist.hokudai.ac.jp/member/takahiro-ogawa/" target="_blank" rel="noreferrer">Takahiro Ogawa<sup>3</sup></a>
+          <a href="https://www-lmd.ist.hokudai.ac.jp/member/miki-haseyama/" target="_blank" rel="noreferrer">Miki Haseyama<sup>3</sup></a>
+          <a href="https://www.comm.utoronto.ca/~kostas/" target="_blank" rel="noreferrer">Konstantinos N. Plataniotis<sup>1</sup></a>
+        </div>
+
+        <div class="affiliations-list">
+          <span><sup>1</sup> University of Toronto</span>
+          <span><sup>2</sup> Stanford University</span>
+          <span><sup>3</sup> Hokkaido University</span>
+        </div>
+
+        <p class="affiliation">ICLR 2026</p>
+
+        <div class="button-row">
+          <a href="https://openreview.net/forum?id=CYmjrbQRyM" target="_blank" rel="noreferrer">Paper</a>
+          <a href="https://openreview.net/pdf?id=CYmjrbQRyM" target="_blank" rel="noreferrer">PDF</a>
+          <a href="https://anonymous.4open.science/r/ASMIL-5018/" target="_blank" rel="noreferrer">Code</a>
+        </div>
+      </section>
+
+      <section class="section teaser">
+        <figure>
+          <img src="assets/images/Self_SuperviseMIL_new.pdf.png" alt="ASMIL overview figure" loading="eager" />
+          <figcaption>Overview of ASMIL.</figcaption>
+        </figure>
+      </section>
+
+      <section class="section content">
+        <h2>Abstract</h2>
+        <p>
+          Attention-based multiple instance learning (MIL) is widely used for whole-slide image diagnosis,
+          but attention maps may oscillate across epochs instead of converging to a stable pattern. ASMIL
+          addresses this instability together with two other known limitations: overfitting and overly
+          concentrated attention distributions. The framework stabilizes training with an anchor model,
+          uses normalized sigmoid in the anchor branch to avoid concentration collapse, and applies token
+          random dropping for regularization. Experiments across representative MIL baselines and public
+          WSI datasets show strong improvements, including up to 6.49% F1 over prior methods.
+        </p>
+      </section>
+
+      <section class="section content">
+        <h2>Results</h2>
+        <div class="results-grid">
+          <article>
+            <h3>+6.49%</h3>
+            <p>F1 gain over previous state-of-the-art methods in reported settings.</p>
+          </article>
+          <article>
+            <h3>+10.73%</h3>
+            <p>Best F1 gain when integrating ASMIL components into existing MIL pipelines.</p>
+          </article>
+          <article>
+            <h3>Unified Framework</h3>
+            <p>One method jointly handles instability, overfitting, and attention concentration.</p>
+          </article>
+        </div>
+        <figure class="result-figure">
+          <img src="assets/images/ABMIL_fluctuation.pdf.png" alt="ABMIL fluctuation results" loading="lazy" />
+          <figcaption>Result visualization: ABMIL fluctuation behavior across training.</figcaption>
+        </figure>
+      </section>
+
+      <section class="section content bibtex-section">
+        <h2>BibTeX</h2>
+        <button id="copy-bibtex" class="copy-btn" type="button">Copy</button>
+        <pre><code id="bibtex">@inproceedings{ye2026asmil,
+  title={ASMIL: Attention-Stabilized Multiple Instance Learning for Whole-Slide Imaging},
+  author={Ye, Linfeng and Hamidi, Shayan Mohajer and Chi, Zhixiang and Li, Guang and Pilanci, Mert and Ogawa, Takahiro and Haseyama, Miki and Plataniotis, Konstantinos N.},
+  booktitle={International Conference on Learning Representations (ICLR)},
+  year={2026}
+}</code></pre>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        This page is adapted from the
+        <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank" rel="noreferrer">Academic Project Page Template</a>.
+      </p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
